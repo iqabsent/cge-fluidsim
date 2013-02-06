@@ -34,7 +34,7 @@
 		DF57296116BC6278004A08B7 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QTKit.framework; sourceTree = "<group>"; };
 		DF57296316BC6294004A08B7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quartz.framework; sourceTree = "<group>"; };
 		DF57296516BC62A7004A08B7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenGL.framework; sourceTree = "<group>"; };
-		DF57296716BC62CB004A08B7 /* libXplugin.dylib */ = {isa = PBXFileReference; lastKnownFileType = file; path = libXplugin.dylib; sourceTree = "<group>"; };
+		DF57296716BC62CB004A08B7 /* libXplugin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libXplugin.dylib; sourceTree = "<group>"; };
 		DF57296816BC6376004A08B7 /* solver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = solver.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,12 +144,14 @@
 		DF57291416BC6036004A08B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		DF57291516BC6036004A08B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -184,10 +186,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -216,9 +218,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -241,6 +243,7 @@
 				DF57295D16BC6121004A08B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
