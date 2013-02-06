@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/lib
+END
+OpenAL32.lib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/lib/OpenAL32.lib
+END
+freeglut_static.lib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/lib/freeglut_static.lib
+END
+glew32s.lib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/lib/glew32s.lib
+END

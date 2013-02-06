@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL
+END
+al.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/al.h
+END
+EFX-Util.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/EFX-Util.h
+END
+alc.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/alc.h
+END
+efx-creative.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/efx-creative.h
+END
+efx.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/efx.h
+END
+xram.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/goldsmithsgames/!svn/ver/391/trunk/games/toms_game/include/AL/xram.h
+END
