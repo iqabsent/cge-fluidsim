@@ -1,0 +1,21 @@
+﻿Build started 2/11/2013 5:28:45 PM.
+     1>Project "C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Fluid3D.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/." /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GLEW_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Fluid3D.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/Debug/Fluid3D.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt  /Zm1000 ..\Utility.cpp ..\Fluid3d.cpp ..\Trackball.cpp
+         Utility.cpp
+         Fluid3d.cpp
+         Trackball.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Debug\Fluid3D.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Debug\Ecosystem.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/Debug/Fluid3D.pdb" /SUBSYSTEM:WINDOWS /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/Debug/Fluid3D.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug Fluid3D.dir\Debug\Utility.obj
+         Fluid3D.dir\Debug\Fluid3d.obj
+         Fluid3D.dir\Debug\Trackball.obj
+         Fluid3D.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Debug\Fluid3D.exe
+     1>Done Building Project "C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Fluid3D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.52

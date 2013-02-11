@@ -1,0 +1,119 @@
+The system is: Windows - 6.1 - x86
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: ;/DWIN32;/D_WINDOWS;/W3;/Zm1000
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: CompilerIdC, Configuration: Debug Win32 ------
+1>  CMakeCCompilerId.c
+1>  CompilerIdC.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\2.8.10.2\CompilerIdC\.\CompilerIdC.exe
+1>  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/2.8.10.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: ;/DWIN32;/D_WINDOWS;/W3;/Zm1000;/GR;/EHsc
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: CompilerIdCXX, Configuration: Debug Win32 ------
+1>  CMakeCXXCompilerId.cpp
+1>  CompilerIdCXX.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\2.8.10.2\CompilerIdCXX\.\CompilerIdCXX.exe
+1>  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec2004481797
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec2004481797, Configuration: Debug Win32 ------
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.51106.1 for x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2004481797.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2004481797.pdb" /Gd /TC /analyze- /errorReport:prompt  /Zm1000 testCCompiler.c
+1>  
+1>  testCCompiler.c
+1>  cmTryCompileExec2004481797.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2004481797.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3751396955
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3751396955, Configuration: Debug Win32 ------
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.51106.1 for x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3751396955.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3751396955.pdb" /Gd /TC /analyze- /errorReport:prompt  /Zm1000 "C:\Program Files (x86)\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+1>  
+1>  CMakeCCompilerABI.c
+1>  cmTryCompileExec3751396955.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3751396955.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3873968445
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3873968445, Configuration: Debug Win32 ------
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.51106.1 for x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3873968445.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3873968445.pdb" /Gd /TP /analyze- /errorReport:prompt  /Zm1000 testCXXCompiler.cxx
+1>  
+1>  testCXXCompiler.cxx
+1>  cmTryCompileExec3873968445.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3873968445.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~3.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3184264199
+
+Microsoft (R) Microsoft Visual Studio 2012 Version 11.0.51106.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3184264199, Configuration: Debug Win32 ------
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.51106.1 for x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3184264199.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3184264199.pdb" /Gd /TP /analyze- /errorReport:prompt  /Zm1000 "C:\Program Files (x86)\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>  cmTryCompileExec3184264199.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3184264199.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+

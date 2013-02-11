@@ -1,0 +1,21 @@
+﻿Build started 2/11/2013 5:28:43 PM.
+     1>Project "C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Ecosystem.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/." /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GLEW_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Ecosystem.dir\Debug\\" /Fd"C:/Users/Per/Goldsmiths/FLUIDS/CG-E_CC/grasshopper/build/Debug/Ecosystem.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt  /Zm1000 ..\glew.c ..\glsw.c ..\pez.win.c
+         glew.c
+         glsw.c
+         pez.win.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Debug\Ecosystem.lib" /NOLOGO Ecosystem.dir\Debug\glew.obj
+         Ecosystem.dir\Debug\glsw.obj
+         Ecosystem.dir\Debug\pez.win.obj
+         Ecosystem.vcxproj -> C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Debug\Ecosystem.lib
+     1>Done Building Project "C:\Users\Per\Goldsmiths\FLUIDS\CG-E_CC\grasshopper\build\Ecosystem.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.18
