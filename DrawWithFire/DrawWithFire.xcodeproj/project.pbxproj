@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		354E4EF9143E644500E55C9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354E4EF8143E644500E55C9B /* UIKit.framework */; };
+		354E4EFB143E644500E55C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354E4EFA143E644500E55C9B /* Foundation.framework */; };
+		354E4EFD143E644500E55C9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354E4EFC143E644500E55C9B /* CoreGraphics.framework */; };
+		354E4F03143E644500E55C9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 354E4F01143E644500E55C9B /* InfoPlist.strings */; };
+		354E4F05143E644500E55C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E4F04143E644500E55C9B /* main.m */; };
+		354E4F09143E644600E55C9B /* DWFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E4F08143E644600E55C9B /* DWFAppDelegate.m */; };
+		354E4F0C143E644600E55C9B /* DWFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E4F0B143E644600E55C9B /* DWFViewController.m */; };
+		354E4F0F143E644600E55C9B /* DWFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354E4F0D143E644600E55C9B /* DWFViewController.xib */; };
+		354E4F16143E646400E55C9B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354E4F15143E646400E55C9B /* QuartzCore.framework */; };
+		354E4F19143E64F700E55C9B /* DWFParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E4F18143E64F700E55C9B /* DWFParticleView.m */; };
+		354E4F1B143E66BF00E55C9B /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 354E4F1A143E66BF00E55C9B /* Particles_fire.png */; };
+		E15ADABA14423834009760D0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E15ADAB914423834009760D0 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		354E4EF4143E644500E55C9B /* DrawWithFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawWithFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		354E4EF8143E644500E55C9B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		354E4EFA143E644500E55C9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		354E4EFC143E644500E55C9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		354E4F00143E644500E55C9B /* DrawWithFire-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawWithFire-Info.plist"; sourceTree = "<group>"; };
+		354E4F02143E644500E55C9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		354E4F04143E644500E55C9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		354E4F06143E644500E55C9B /* DrawWithFire-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawWithFire-Prefix.pch"; sourceTree = "<group>"; };
+		354E4F07143E644500E55C9B /* DWFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWFAppDelegate.h; sourceTree = "<group>"; };
+		354E4F08143E644600E55C9B /* DWFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWFAppDelegate.m; sourceTree = "<group>"; };
+		354E4F0A143E644600E55C9B /* DWFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWFViewController.h; sourceTree = "<group>"; };
+		354E4F0B143E644600E55C9B /* DWFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWFViewController.m; sourceTree = "<group>"; };
+		354E4F0E143E644600E55C9B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DWFViewController.xib; sourceTree = "<group>"; };
+		354E4F15143E646400E55C9B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		354E4F17143E64F700E55C9B /* DWFParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DWFParticleView.h; path = ../DWFParticleView.h; sourceTree = "<group>"; };
+		354E4F18143E64F700E55C9B /* DWFParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DWFParticleView.m; path = ../DWFParticleView.m; sourceTree = "<group>"; };
+		354E4F1A143E66BF00E55C9B /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
+		E15ADAB914423834009760D0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		354E4EF1143E644500E55C9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354E4F16143E646400E55C9B /* QuartzCore.framework in Frameworks */,
+				354E4EF9143E644500E55C9B /* UIKit.framework in Frameworks */,
+				354E4EFB143E644500E55C9B /* Foundation.framework in Frameworks */,
+				354E4EFD143E644500E55C9B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		354E4EE9143E644500E55C9B = {
+			isa = PBXGroup;
+			children = (
+				354E4F15143E646400E55C9B /* QuartzCore.framework */,
+				354E4EFE143E644500E55C9B /* DrawWithFire */,
+				354E4EF7143E644500E55C9B /* Frameworks */,
+				354E4EF5143E644500E55C9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		354E4EF5143E644500E55C9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				354E4EF4143E644500E55C9B /* DrawWithFire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		354E4EF7143E644500E55C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354E4EF8143E644500E55C9B /* UIKit.framework */,
+				354E4EFA143E644500E55C9B /* Foundation.framework */,
+				354E4EFC143E644500E55C9B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		354E4EFE143E644500E55C9B /* DrawWithFire */ = {
+			isa = PBXGroup;
+			children = (
+				354E4F1A143E66BF00E55C9B /* Particles_fire.png */,
+				354E4F07143E644500E55C9B /* DWFAppDelegate.h */,
+				354E4F08143E644600E55C9B /* DWFAppDelegate.m */,
+				354E4F0A143E644600E55C9B /* DWFViewController.h */,
+				354E4F0B143E644600E55C9B /* DWFViewController.m */,
+				354E4F0D143E644600E55C9B /* DWFViewController.xib */,
+				354E4F17143E64F700E55C9B /* DWFParticleView.h */,
+				354E4F18143E64F700E55C9B /* DWFParticleView.m */,
+				354E4EFF143E644500E55C9B /* Supporting Files */,
+			);
+			path = DrawWithFire;
+			sourceTree = "<group>";
+		};
+		354E4EFF143E644500E55C9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E15ADAB914423834009760D0 /* Icon.png */,
+				354E4F00143E644500E55C9B /* DrawWithFire-Info.plist */,
+				354E4F01143E644500E55C9B /* InfoPlist.strings */,
+				354E4F04143E644500E55C9B /* main.m */,
+				354E4F06143E644500E55C9B /* DrawWithFire-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		354E4EF3143E644500E55C9B /* DrawWithFire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354E4F12143E644600E55C9B /* Build configuration list for PBXNativeTarget "DrawWithFire" */;
+			buildPhases = (
+				354E4EF0143E644500E55C9B /* Sources */,
+				354E4EF1143E644500E55C9B /* Frameworks */,
+				354E4EF2143E644500E55C9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawWithFire;
+			productName = DrawWithFire;
+			productReference = 354E4EF4143E644500E55C9B /* DrawWithFire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		354E4EEB143E644500E55C9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 354E4EEE143E644500E55C9B /* Build configuration list for PBXProject "DrawWithFire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 354E4EE9143E644500E55C9B;
+			productRefGroup = 354E4EF5143E644500E55C9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				354E4EF3143E644500E55C9B /* DrawWithFire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		354E4EF2143E644500E55C9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354E4F03143E644500E55C9B /* InfoPlist.strings in Resources */,
+				354E4F0F143E644600E55C9B /* DWFViewController.xib in Resources */,
+				354E4F1B143E66BF00E55C9B /* Particles_fire.png in Resources */,
+				E15ADABA14423834009760D0 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		354E4EF0143E644500E55C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354E4F05143E644500E55C9B /* main.m in Sources */,
+				354E4F09143E644600E55C9B /* DWFAppDelegate.m in Sources */,
+				354E4F0C143E644600E55C9B /* DWFViewController.m in Sources */,
+				354E4F19143E64F700E55C9B /* DWFParticleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		354E4F01143E644500E55C9B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				354E4F02143E644500E55C9B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		354E4F0D143E644600E55C9B /* DWFViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				354E4F0E143E644600E55C9B /* en */,
+			);
+			name = DWFViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		354E4F10143E644600E55C9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		354E4F11143E644600E55C9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		354E4F13143E644600E55C9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawWithFire/DrawWithFire-Prefix.pch";
+				INFOPLIST_FILE = "DrawWithFire/DrawWithFire-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		354E4F14143E644600E55C9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawWithFire/DrawWithFire-Prefix.pch";
+				INFOPLIST_FILE = "DrawWithFire/DrawWithFire-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		354E4EEE143E644500E55C9B /* Build configuration list for PBXProject "DrawWithFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354E4F10143E644600E55C9B /* Debug */,
+				354E4F11143E644600E55C9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354E4F12143E644600E55C9B /* Build configuration list for PBXNativeTarget "DrawWithFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354E4F13143E644600E55C9B /* Debug */,
+				354E4F14143E644600E55C9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 354E4EEB143E644500E55C9B /* Project object */;
+}
