@@ -19,20 +19,16 @@ GLuint CreateProgram(const char* vsKey, const char* gsKey, const char* fsKey)
         strcpy(qualifiedPath, PezResourcePath());
         strcat(qualifiedPath, "/");
         glswAddPath(qualifiedPath, ".glsl");
-
-        //glswAddDirective("*", "#version 150");
+        glswAddDirective("*", "#version 100");
 
         first = 0;
     }
     
     const char* vsSource = glswGetShader(vsKey);
-    const char* gsSource = glswGetShader(gsKey);
+    //const char* gsSource = glswGetShader(gsKey);
     const char* fsSource = glswGetShader(fsKey);
 
-    const char* msg = "Can't find %s shader: '%s'.\n";
-    //PezCheckCondition(vsSource != 0, msg, "vertex", vsKey);
-    //PezCheckCondition(gsKey == 0 || gsSource != 0, msg, "geometry", gsKey);
-    //PezCheckCondition(fsKey == 0 || fsSource != 0, msg, "fragment", fsKey);
+    
     
     GLint compileSuccess;
     GLchar compilerSpew[256];
@@ -65,6 +61,7 @@ GLuint CreateProgram(const char* vsKey, const char* gsKey, const char* fsKey)
         glCompileShader(fsHandle);
         glGetShaderiv(fsHandle, GL_COMPILE_STATUS, &compileSuccess);
         glGetShaderInfoLog(fsHandle, sizeof(compilerSpew), 0, compilerSpew);
+        NSLog(@"/output: %s", compilerSpew);
         //PezCheckCondition(compileSuccess, "Can't compile %s:\n%s", fsKey, compilerSpew);
         glAttachShader(programHandle, fsHandle);
     }
@@ -74,14 +71,7 @@ GLuint CreateProgram(const char* vsKey, const char* gsKey, const char* fsKey)
     GLint linkSuccess;
     glGetProgramiv(programHandle, GL_LINK_STATUS, &linkSuccess);
     glGetProgramInfoLog(programHandle, sizeof(compilerSpew), 0, compilerSpew);
+    NSLog(@"/Fragment Shader: %s", compilerSpew);
 
-//    if (!linkSuccess) {
-//        PezDebugString("Link error.\n");
-//        if (vsKey) PezDebugString("Vertex Shader: %s\n", vsKey);
-//        if (gsKey) PezDebugString("Geometry Shader: %s\n", gsKey);
-//        if (fsKey) PezDebugString("Fragment Shader: %s\n", fsKey);
-//        PezDebugString("%s\n", compilerSpew);
-//    }
-    
     return programHandle;
 }

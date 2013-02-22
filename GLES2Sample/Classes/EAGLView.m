@@ -77,7 +77,6 @@
                                         [NSNumber numberWithBool:FALSE], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
 		
 		renderer = [[ES2Renderer alloc] init];
-		PezInitialize(320,470);
 		if (!renderer)
 		{
 			renderer = [[ES1Renderer alloc] init];
@@ -108,9 +107,10 @@
 
 - (void) drawView:(id)sender
 {
-    //[renderer render];
-    PezUpdate((unsigned int) 1);
-    PezRender(0);
+    //[renderer render:0];
+    [renderer render];
+    //PezUpdate((unsigned int) 1);
+    //PezRender(0);
 }
 
 - (void) layoutSubviews

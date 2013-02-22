@@ -19,8 +19,6 @@
 		AF1AED3A101E699D00EFB8CB /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1AED35101E699D00EFB8CB /* ES2Renderer.m */; };
 		AF1AED3B101E699D00EFB8CB /* Shaders.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1AED38101E699D00EFB8CB /* Shaders.m */; };
 		AF1AED3E101E69AD00EFB8CB /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = AF1AED3C101E69AD00EFB8CB /* matrix.c */; };
-		AF1AED42101E69BE00EFB8CB /* template.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AF1AED40101E69BE00EFB8CB /* template.fsh */; };
-		AF1AED43101E69BE00EFB8CB /* template.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AF1AED41101E69BE00EFB8CB /* template.vsh */; };
 		AFC29B8911D56BC3006F150F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B8211D56BC3006F150F /* Icon-72.png */; };
 		AFC29B8A11D56BC3006F150F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B8311D56BC3006F150F /* Icon-Small-50.png */; };
 		AFC29B8B11D56BC3006F150F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B8411D56BC3006F150F /* Icon-Small.png */; };
@@ -35,7 +33,7 @@
 		DF0CB8D916D1250E00EDE766 /* SlabOps.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CB8D216D1250E00EDE766 /* SlabOps.m */; };
 		DF0CB91416D14D4400EDE766 /* bstrlib.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CB91116D14D4300EDE766 /* bstrlib.m */; };
 		DF0CB91516D14D4400EDE766 /* glsw.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CB91316D14D4300EDE766 /* glsw.m */; };
-		DF0CB91716D15D6C00EDE766 /* Fluid.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CB91616D15D6B00EDE766 /* Fluid.m */; };
+		DF4883DC16D3E26100E824EE /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4883DB16D3E26100E824EE /* MainWindow-iPad.xib */; };
 		DF59255316D19B0C00810523 /* Fluid.glsl in Resources */ = {isa = PBXBuildFile; fileRef = DF0CB91D16D17F5500EDE766 /* Fluid.glsl */; };
 		DFC3F77116CA57E300B52F43 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC3F77016CA57E300B52F43 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
@@ -63,8 +61,6 @@
 		AF1AED38101E699D00EFB8CB /* Shaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shaders.m; sourceTree = "<group>"; };
 		AF1AED3C101E69AD00EFB8CB /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = matrix.c; path = Classes/matrix.c; sourceTree = "<group>"; };
 		AF1AED3D101E69AD00EFB8CB /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = Classes/matrix.h; sourceTree = "<group>"; };
-		AF1AED40101E69BE00EFB8CB /* template.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.fsh; sourceTree = "<group>"; };
-		AF1AED41101E69BE00EFB8CB /* template.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.vsh; sourceTree = "<group>"; };
 		AFC29B8211D56BC3006F150F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images/Icon-72.png"; sourceTree = "<group>"; };
 		AFC29B8311D56BC3006F150F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Images/Icon-Small-50.png"; sourceTree = "<group>"; };
 		AFC29B8411D56BC3006F150F /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icon-Small.png"; sourceTree = "<group>"; };
@@ -82,8 +78,8 @@
 		DF0CB91116D14D4300EDE766 /* bstrlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bstrlib.m; path = Classes/glsw/bstrlib.m; sourceTree = "<group>"; };
 		DF0CB91216D14D4300EDE766 /* glsw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glsw.h; path = Classes/glsw/glsw.h; sourceTree = "<group>"; };
 		DF0CB91316D14D4300EDE766 /* glsw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = glsw.m; path = Classes/glsw/glsw.m; sourceTree = "<group>"; };
-		DF0CB91616D15D6B00EDE766 /* Fluid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fluid.m; sourceTree = "<group>"; };
-		DF0CB91D16D17F5500EDE766 /* Fluid.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fluid.glsl; path = ../../Classes/Fluid.glsl; sourceTree = "<group>"; };
+		DF0CB91D16D17F5500EDE766 /* Fluid.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fluid.glsl; path = "/Users/pergriffiths/Library/Application Support/iPhone Simulator/6.1/Applications/F9ACC3C9-A0AF-42EB-B1B5-C716AD398F70/Documents/Fluid.glsl"; sourceTree = "<absolute>"; };
+		DF4883DB16D3E26100E824EE /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		DFC3F77016CA57E300B52F43 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioToolbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +113,6 @@
 				DF0CB8CC16D1250D00EDE766 /* CreateProgram.m */,
 				DF0CB8CD16D1250D00EDE766 /* CreateQuad.m */,
 				DF0CB8CE16D1250E00EDE766 /* CreateSlab.m */,
-				DF0CB91616D15D6B00EDE766 /* Fluid.m */,
 				DF0CB8D116D1250E00EDE766 /* Fluid.h */,
 				DF0CB8D216D1250E00EDE766 /* SlabOps.m */,
 				28FD14FC0DC6FC130079059D /* EAGLView.h */,
@@ -142,6 +137,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				DF4883DA16D3E25F00E824EE /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -196,11 +192,17 @@
 			isa = PBXGroup;
 			children = (
 				DF0CB91D16D17F5500EDE766 /* Fluid.glsl */,
-				AF1AED40101E69BE00EFB8CB /* template.fsh */,
-				AF1AED41101E69BE00EFB8CB /* template.vsh */,
 			);
 			name = Shaders;
 			path = Resources/Shaders;
+			sourceTree = "<group>";
+		};
+		DF4883DA16D3E25F00E824EE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				DF4883DB16D3E26100E824EE /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +253,6 @@
 			files = (
 				DF59255316D19B0C00810523 /* Fluid.glsl in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				AF1AED42101E69BE00EFB8CB /* template.fsh in Resources */,
-				AF1AED43101E69BE00EFB8CB /* template.vsh in Resources */,
 				AFC29B8911D56BC3006F150F /* Icon-72.png in Resources */,
 				AFC29B8A11D56BC3006F150F /* Icon-Small-50.png in Resources */,
 				AFC29B8B11D56BC3006F150F /* Icon-Small.png in Resources */,
@@ -260,6 +260,7 @@
 				AFC29B8D11D56BC3006F150F /* Icon.png in Resources */,
 				AFC29B8E11D56BC3006F150F /* Icon@2x.png in Resources */,
 				AFC29B8F11D56BC3006F150F /* iTunesArtwork in Resources */,
+				DF4883DC16D3E26100E824EE /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +285,6 @@
 				DF0CB8D916D1250E00EDE766 /* SlabOps.m in Sources */,
 				DF0CB91416D14D4400EDE766 /* bstrlib.m in Sources */,
 				DF0CB91516D14D4400EDE766 /* glsw.m in Sources */,
-				DF0CB91716D15D6C00EDE766 /* Fluid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,9 @@
 				GCC_PREFIX_HEADER = GLES2Sample_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "GLES2Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = GLES2Sample;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +325,9 @@
 				GCC_PREFIX_HEADER = GLES2Sample_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "GLES2Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = GLES2Sample;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

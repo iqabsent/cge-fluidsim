@@ -1,5 +1,8 @@
 #include "Fluid.h"
 //#include "Pez.h"
+
+
+
 Slab CreateSlab(GLsizei width, GLsizei height, int numComponents)
 {
     Slab slab;
@@ -27,17 +30,18 @@ Surface CreateSurface(GLsizei width, GLsizei height, int numComponents)
     if (UseHalfFloats) {
         switch (numComponents) {
             case 1: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0); break;
+            //case 1: glTexImage2D(GL_TEXTURE_2D, 0, 0x1908, width, height, 0, 0x1908, 0x140B, 0); break;
             case 2: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0); break;
-            case 3: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0); break;
+            case 3: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA,  GL_UNSIGNED_BYTE, 0); break;
             case 4: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0); break;
                 //default: PezFatalError("Illegal slab format.");
         }
     } else {
         switch (numComponents) {
-            case 1: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_FLOAT, 0); break;
-            case 2: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_FLOAT, 0); break;
-            case 3: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_FLOAT, 0); break;
-            case 4: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_FLOAT, 0); break;
+            case 1: glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, width, height, 0, GL_RED_EXT, GL_FLOAT, 0); break;
+            case 2: glTexImage2D(GL_TEXTURE_2D, 0, GL_RG32F_EXT, width, height, 0, GL_RG32F_EXT, GL_FLOAT, 0); break;
+            case 3: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB32F_EXT, width, height, 0, GL_RGB32F_EXT, GL_FLOAT, 0); break;
+            case 4: glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA32F_EXT, width, height, 0, GL_RGBA32F_EXT, GL_FLOAT, 0); break;
                 //default: PezFatalError("Illegal slab format.");
         }
     }

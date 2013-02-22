@@ -10,43 +10,47 @@ void main()
 
 -- Fill
 
-varying vec3 FragColor;
-
+varying lowp vec3 FragColor;
+precision mediump float;
 void main()
 {
-    FragColor = vec3(1, 0, 0);
+    lowp vec3 temp = vec3(1, 0, 0);
+    FragColor = temp;
 }
 
 -- Advect
 
-varying vec4 FragColor;
-
+precision mediump float;
+varying lowp vec4 FragColor;
 uniform sampler2D VelocityTexture;
 uniform sampler2D SourceTexture;
 uniform sampler2D Obstacles;
 
-uniform vec2 InverseSize;
+uniform lowp vec2 InverseSize;
 uniform float TimeStep;
 uniform float Dissipation;
-
+uniform float solid;
 void main()
 {
-    vec2 fragCoord = gl_FragCoord.xy;
-    float solid = texture(Obstacles, InverseSize * fragCoord).x;
-    if (solid > 0) {
-        FragColor = vec4(0);
+    lowp vec2 fragCoord = gl_FragCoord.xy;
+
+    float solid = texture2D(Obstacles, InverseSize * fragCoord,0.0).x;
+    if (solid > 0.0) {
+        lowp vec4 temp = vec4(0);
+        FragColor = temp;
         return;
     }
 
-    vec2 u = texture(VelocityTexture, InverseSize * fragCoord).xy;
-    vec2 coord = InverseSize * (fragCoord - TimeStep * u);
-    FragColor = Dissipation * texture(SourceTexture, coord);
+    lowp vec2 u = texture2D(VelocityTexture, InverseSize * fragCoord,0.0).xy;
+    lowp vec2 coord = InverseSize * (fragCoord - TimeStep * u);
+    lowp vec4 temp2 = Dissipation * texture2D(SourceTexture, coord,0.0);
+    FragColor = temp2;
 }
 
 -- Jacobi
 
-varying vec4 FragColor;
-
+varying lowp vec4 FragColor;
+precision mediump float;
 uniform sampler2D Pressure;
 uniform sampler2D Divergence;
 uniform sampler2D Obstacles;
@@ -59,17 +63,17 @@ void main()
     ivec2 T = ivec2(gl_FragCoord.xy);
 
     // Find neighboring pressure:
-    vec4 pN = texelFetchOffset(Pressure, T, 0, ivec2(0, 1));
-    vec4 pS = texelFetchOffset(Pressure, T, 0, ivec2(0, -1));
-    vec4 pE = texelFetchOffset(Pressure, T, 0, ivec2(1, 0));
-    vec4 pW = texelFetchOffset(Pressure, T, 0, ivec2(-1, 0));
-    vec4 pC = texelFetch(Pressure, T, 0);
+    lowp vec4 pN = texelFetchOffset(Pressure, T, 0, ivec2(0, 1));
+    lowp vec4 pS = texelFetchOffset(Pressure, T, 0, ivec2(0, -1));
+    lowp vec4 pE = texelFetchOffset(Pressure, T, 0, ivec2(1, 0));
+    lowp vec4 pW = texelFetchOffset(Pressure, T, 0, ivec2(-1, 0));
+    lowp vec4 pC = texelFetch(Pressure, T, 0);
 
     // Find neighboring obstacles:
-    vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
-    vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
-    vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
-    vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
+    lowp vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
+    lowp vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
+    lowp vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
+    lowp vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
 
     // Use center pressure for solid cells:
     if (oN.x > 0) pN = pC;
@@ -77,14 +81,14 @@ void main()
     if (oE.x > 0) pE = pC;
     if (oW.x > 0) pW = pC;
 
-    vec4 bC = texelFetch(Divergence, T, 0);
+    lowp vec4 bC = texelFetch(Divergence, T, 0);
     FragColor = (pW + pE + pS + pN + Alpha * bC) * InverseBeta;
 }
 
 -- SubtractGradient
 
-varying vec2 FragColor;
-
+varying lowp vec2 FragColor;
+precision mediump float;
 uniform sampler2D Velocity;
 uniform sampler2D Pressure;
 uniform sampler2D Obstacles;
@@ -94,7 +98,7 @@ void main()
 {
     ivec2 T = ivec2(gl_FragCoord.xy);
 
-    vec3 oC = texelFetch(Obstacles, T, 0).xyz;
+    lowp vec3 oC = texelFetch(Obstacles, T, 0).xyz;
     if (oC.x > 0) {
         FragColor = oC.yz;
         return;
@@ -108,14 +112,14 @@ void main()
     float pC = texelFetch(Pressure, T, 0).r;
 
     // Find neighboring obstacles:
-    vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
-    vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
-    vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
-    vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
+    lowp vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
+    lowp vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
+    lowp vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
+    lowp vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
 
     // Use center pressure for solid cells:
-    vec2 obstV = vec2(0);
-    vec2 vMask = vec2(1);
+    lowp vec2 obstV = vec2(0);
+    lowp vec2 vMask = vec2(1);
 
     if (oN.x > 0) { pN = pC; obstV.y = oN.z; vMask.y = 0; }
     if (oS.x > 0) { pS = pC; obstV.y = oS.z; vMask.y = 0; }
@@ -123,14 +127,14 @@ void main()
     if (oW.x > 0) { pW = pC; obstV.x = oW.y; vMask.x = 0; }
 
     // Enforce the free-slip boundary condition:
-    vec2 oldV = texelFetch(Velocity, T, 0).xy;
-    vec2 grad = vec2(pE - pW, pN - pS) * GradientScale;
-    vec2 newV = oldV - grad;
+    lowp vec2 oldV = texelFetch(Velocity, T, 0).xy;
+    lowp vec2 grad = vec2(pE - pW, pN - pS) * GradientScale;
+    lowp vec2 newV = oldV - grad;
     FragColor = (vMask * newV) + obstV;  
 }
 
 -- ComputeDivergence
-
+precision mediump float;
 varying float FragColor;
 
 uniform sampler2D Velocity;
@@ -142,16 +146,16 @@ void main()
     ivec2 T = ivec2(gl_FragCoord.xy);
 
     // Find neighboring velocities:
-    vec2 vN = texelFetchOffset(Velocity, T, 0, ivec2(0, 1)).xy;
-    vec2 vS = texelFetchOffset(Velocity, T, 0, ivec2(0, -1)).xy;
-    vec2 vE = texelFetchOffset(Velocity, T, 0, ivec2(1, 0)).xy;
-    vec2 vW = texelFetchOffset(Velocity, T, 0, ivec2(-1, 0)).xy;
+    lowp vec2 vN = texelFetchOffset(Velocity, T, 0, ivec2(0, 1)).xy;
+    lowp vec2 vS = texelFetchOffset(Velocity, T, 0, ivec2(0, -1)).xy;
+    lowp vec2 vE = texelFetchOffset(Velocity, T, 0, ivec2(1, 0)).xy;
+    lowp vec2 vW = texelFetchOffset(Velocity, T, 0, ivec2(-1, 0)).xy;
 
     // Find neighboring obstacles:
-    vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
-    vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
-    vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
-    vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
+    lowp vec3 oN = texelFetchOffset(Obstacles, T, 0, ivec2(0, 1)).xyz;
+    lowp vec3 oS = texelFetchOffset(Obstacles, T, 0, ivec2(0, -1)).xyz;
+    lowp vec3 oE = texelFetchOffset(Obstacles, T, 0, ivec2(1, 0)).xyz;
+    lowp vec3 oW = texelFetchOffset(Obstacles, T, 0, ivec2(-1, 0)).xyz;
 
     // Use obstacle velocities for solid cells:
     if (oN.x > 0) vN = oN.yz;
@@ -164,11 +168,12 @@ void main()
 
 -- Splat
 
-varying vec4 FragColor;
-
-uniform vec2 Point;
+varying lowp vec4 FragColor;
+precision mediump float;
+precision mediump vec4;
+uniform lowp vec2 Point;
 uniform float Radius;
-uniform vec3 FillColor;
+uniform lowp vec3 FillColor;
 
 void main()
 {
@@ -184,7 +189,8 @@ void main()
 
 -- Buoyancy
 
-varying vec2 FragColor;
+varying lowp vec2 FragColor;
+precision mediump float;
 uniform sampler2D Velocity;
 uniform sampler2D Temperature;
 uniform sampler2D Density;
@@ -197,7 +203,7 @@ void main()
 {
     ivec2 TC = ivec2(gl_FragCoord.xy);
     float T = texelFetch(Temperature, TC, 0).r;
-    vec2 V = texelFetch(Velocity, TC, 0).xy;
+    lowp vec2 V = texelFetch(Velocity, TC, 0).xy;
 
     FragColor = V;
 
@@ -209,11 +215,11 @@ void main()
 
 -- Visualize
 
-varying vec4 FragColor;
+varying lowp vec4 FragColor;
 uniform sampler2D Sampler;
-uniform vec3 FillColor;
-uniform vec2 Scale;
-
+uniform lowp vec3 FillColor;
+uniform lowp vec2 Scale;
+precision mediump float;
 void main()
 {
     float L = texture(Sampler, gl_FragCoord.xy * Scale).r;
