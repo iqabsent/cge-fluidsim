@@ -1,3 +1,3 @@
-CG-E_CC
+MSc CGE (Creative Coding - mobile) Fluid simulation
 =======
-text
+Clean-up and write-up coming soon..
